@@ -22,17 +22,17 @@ categories: []
 
 3. 最后点击确认生成 token，并**复制**，**注意 ⚠️ 刷新之后就没有办法复制了**。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/Fv9aHq1-NNLTVgSUqUFagqiuXnKq.png)
+![[Posts/attachments/28a0735784c9b88bc187424f0232dace_MD5.png]]
 
 ## 设置环境变量
 
 1. 进入到**项目**设置页面，选择添加[Actions 的环境变量](https://github.com/songxingguo/resume/settings/secrets/actions)。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FrIY5Jtbgpf4f6dVbJw05tgPrnLU.png)
+![[Posts/attachments/2de454c076113f81848c9e68b5031bf5_MD5.png]]
 
 2. 输入变量名称`ACCESS_TOKEN`，密钥一栏粘贴刚才复制的 Token，点击添加就完成了。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/Fl6OpNuIfRyDofKm-aKoQSfW8LAr.png)
+![[Posts/attachments/d730907c769fae0040d94aba7bc65070_MD5.png]]
 
 ## 项目中添加配置文件
 
@@ -68,6 +68,6 @@ jobs:
 
 2. 然后提交代码就开始自动部署了。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FtBuIbPHuD4YxSJImJg7yFsektPM.png)
+![[Posts/attachments/4ba5e06792e715e734a7fbff02f8946e_MD5.png]]
 
 ## 扩展阅读

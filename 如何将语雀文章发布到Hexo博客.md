@@ -22,7 +22,7 @@ categories: [前端]
 
 ## 设计思路
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FlChHeNiAySN1-R3hmWCTrVo3BxH.jpeg)
+![[Posts/attachments/1c35ecd6b97ece67648a697e29149539_MD5.png]]
 整体的设计思路是每次语雀更新文档都通过 Webhook 发送钉钉消息，当手动点击【发布】的时候再触发 GithubAction 将 slug 对应的文章从语雀拉取下去并推送到博客仓库，最后部署博客。触发流程虽然是从语雀到 Github 的过程，但开发的过程是优先处理 Github 部分然后再由语雀触发 Webhook，开发过程主要包括以下几个步骤。
 
 1. 配置`yuque-heox-publish`
@@ -143,21 +143,21 @@ YUQUE_TOKEN=xxx SLUG=xxx yuque-hexo publish
 
 1. 创建一个处理 http 请求的 node.js 云函数，[云函数创建地址](https://fcnext.console.aliyun.com/cn-hangzhou/tasks)。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FmgXhivkd1GDSXivmeXk4GFgJ5mW.png)
+![[Posts/attachments/76f3f879b878b3ed83dc201ec1e2739a_MD5.png]]
 
 2. 创建好后的效果如下。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/Fn9FBWVuiHojlCDdNBudsnalwEXs.png)
+![[Posts/attachments/9607784fb89da84848255da0ab2bfd3b_MD5.png]]
 
 #### 调试云函数
 
 1. 配置测试请求。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FrNF5Qqv5Z8c-GdIRsTEUU9fR6Rq.png)
+![[Posts/attachments/659da3a0fc4ddcc5d767857efd44eec3_MD5.png]]
 
 2. 部署代码之后，点击【测试函数】，就可以看到日志输出。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/Fm13C_KkS6MOfXCgdToHQqHVS7-p.png)
+![[Posts/attachments/4b18f9b1d2a3666654764ce4b2d464f0_MD5.png]]
 
 #### 使用云函数触发 GithubAction
 
@@ -200,7 +200,7 @@ axios
 ```
 
 其中`GITHUB_TOKEN`是 github 的授权码，获取和配置可以参考[使用 Github Action 部署静态网站](https://www.yuque.com/songxingguo/devhints/tfub27hk86lsdrpb)。`event_type`是活动类型这个和`.github/workflows/publish.yml`里面的`types`是一一对应的，如果`.github/workflows/publish.yml`中没有指定具体`types`，那这儿填任何值都是可以。更多信息可以查看[详细配置](https://docs.github.com/zh/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#repository_dispatch)。
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FveEzFT5TggObDiemqVIn5zlRzAd.png)
+![[Posts/attachments/cbc6e13f32c639789af398c5a70e44ec_MD5.png]]
 完整代码如下。
 
 > 需要注意 ⚠️ 异步执行的问题，可以通过`async-await`保证请求是在`resp.send`之前执行的。
@@ -271,15 +271,15 @@ exports.handler = (req, resp, context) => {
 
 1. 创建钉钉机器人，并复制 webhook 地址。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FhiBRGA1W_Z4-GzqzjiH5esIggKG.png)
+![[Posts/attachments/c2e722e7abf99f7f952594a4dc56fbb5_MD5.png]]
 
 2. 打开[在线接口调试工具](https://hoppscotch.io/)，输入 Webhook 地址，配置钉钉[消息类型及数据格式](https://open.dingtalk.com/document/robots/custom-robot-access#title-72m-8ag-pqw)。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FqEYt6cimbEW4pJDET2YEsevO3bQ.png)
+![[Posts/attachments/f9de1a97e462e0cd34247b86b8badbcd_MD5.png]]
 
 3. 调试到自己想要的效果后复制请求的代码。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FqxbJqsBt0_l1REj_8luZiqzFBxH.png)
+![[Posts/attachments/8f4ef4c4ca1186b91b78fed745c59395_MD5.png]]
 
 ---
 
@@ -340,7 +340,7 @@ https://oapi.dingtalk.com/robot/send?access_token=xx
 ```
 
 最终的效果如下所示。
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FgwZMGzVe6xjsIMMsYyDrVxql0ku.png)
+![[Posts/attachments/e2edea4df3177d710b3563df917bdf13_MD5.png]]
 完整代码如下。
 
 ```javascript
@@ -427,14 +427,14 @@ exports.handler = (req, resp, context) => {
 #### 配置语雀 Webhook
 
 进入语雀[webhook 配置页面](https://www.yuque.com/songxingguo/devhints/settings/webhooks)，填写名称和**推送钉钉消息**云函数的公网地址，并选择**更新文档**时触发。
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/Fmtzly3_0hghg_uvqaK6eDgmsT-M.png)
+![[Posts/attachments/1fc8b945155f48a509889c4b998adef8_MD5.png]]
 
 ## 其他
 
 ### [Hoppscotch](https://hoppscotch.io/)
 
 Hoppscotch 和 postman 的功能是一样的，但这个是线上的版本，更加的方便。有时请求会出现请求无法到达的问题，需要配置插件代理，将请求的域名加入到插件中。
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FkPke4qlMP1Zv2PALiW8f-dAATr5.png)
+![[Posts/attachments/91e9b7c4d9a7008677ce90256b9d458d_MD5.png]]
 
 ## [拓展阅读](https://www.yuque.com/songxingguo/devhints/gwpsg4dq6tp27z3s)
 
