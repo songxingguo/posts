@@ -1,0 +1,16 @@
+name: 更新blog
+on: [push]
+jobs:
+  garden-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            blog.sh
+          sparse-checkout-cone-mode: false
+      - name: "触发garden的GithubAction"
+        run: bash ./blog.sh
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
