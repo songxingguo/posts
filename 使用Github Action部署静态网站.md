@@ -8,30 +8,29 @@ tags:
 categories:
   - 前端
 ---
-
 ## 生成 token
 
 1. 进入 Github 生成[授权 token 的页面](https://github.com/settings/apps)，创建一个 token，修改名称并选择所有仓库。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/FpT1FXfdY0l7BGM5m1bJf8CpX2vJ.png)
+![[Posts/attachments/22be432e4fa1312e721febd62eb8eee5_MD5.webp]]
 
 2. 将仓库权限设置中的 Content 项，设置为读和写。
 
-![](https://raw.githubusercontent.com/songxingguo/songxingguo.github.io/hexo/static/images/Fq0KQlr3rLfbLvpcG3eeBuR3obCM.png)
+![[Posts/attachments/d0e1e9b51ad922bc02bf9e307bc19cfa_MD5.webp]]
 
 3. 最后点击确认生成 token，并**复制**，**注意 ⚠️ 刷新之后就没有办法复制了**。
 
-![[Posts/attachments/28a0735784c9b88bc187424f0232dace_MD5.png]]
+![[Posts/attachments/28a0735784c9b88bc187424f0232dace_MD5.webp]]
 
 ## 设置环境变量
 
 1. 进入到**项目**设置页面，选择添加[Actions 的环境变量](https://github.com/songxingguo/resume/settings/secrets/actions)。
 
-![[Posts/attachments/2de454c076113f81848c9e68b5031bf5_MD5.png]]
+![[Posts/attachments/2de454c076113f81848c9e68b5031bf5_MD5.webp]]
 
 2. 输入变量名称`ACCESS_TOKEN`，密钥一栏粘贴刚才复制的 Token，点击添加就完成了。
 
-![[Posts/attachments/d730907c769fae0040d94aba7bc65070_MD5.png]]
+![[Posts/attachments/d730907c769fae0040d94aba7bc65070_MD5.webp]]
 
 ## 项目中添加配置文件
 
@@ -67,6 +66,6 @@ jobs:
 
 2. 然后提交代码就开始自动部署了。
 
-![[Posts/attachments/4ba5e06792e715e734a7fbff02f8946e_MD5.png]]
+![[Posts/attachments/4ba5e06792e715e734a7fbff02f8946e_MD5.webp]]
 
 ## 扩展阅读
