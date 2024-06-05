@@ -3,12 +3,12 @@ title: 使用Github Action部署静态网站
 description: 使用Github Action部署静态网站
 urlname: tfub27hk86lsdrpb
 date: 2023-01-15 12:05:37 +0000
-pubDate: 2023-02-15
 tags:
   - 场景/博客
 categories:
   - 前端
 ---
+
 ## 生成 token
 
 1. 进入 Github 生成[授权 token 的页面](https://github.com/settings/apps)，创建一个 token，修改名称并选择所有仓库。
