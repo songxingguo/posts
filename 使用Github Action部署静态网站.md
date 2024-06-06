@@ -8,6 +8,9 @@ tags:
 categories:
   - 前端
 ---
+
+## 目录
+
 ## 生成 token
 
 1. 进入 Github 生成[授权 token 的页面](https://github.com/settings/apps)，创建一个 token，修改名称并选择所有仓库。
@@ -67,4 +70,3 @@ jobs:
 2. 然后提交代码就开始自动部署了。
 
 ![[4ba5e06792e715e734a7fbff02f8946e_MD5.webp]]
-
