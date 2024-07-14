@@ -8,7 +8,6 @@ tags:
 categories:
   - 前端
 ---
-
 ## 目录
 
 ## 写在前面
@@ -250,7 +249,7 @@ npm run build
 
 下面是运行效果。
 
-![[从零开始搭建在线个人简历-20240606111858534.webp]]
+![从零开始搭建在线个人简历 20240606111858534](https://image.songxingguo.com/obsidian/20240714/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%9C%A8%E7%BA%BF%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86-20240606111858534.webp)
 
 ## 一些小优化
 
@@ -273,4 +272,4 @@ npm run build
 
 3. 效果如下。
 
-![[从零开始搭建在线个人简历-20240606111909602.webp]]
+![从零开始搭建在线个人简历 20240606111909602](https://image.songxingguo.com/obsidian/20240714/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%9C%A8%E7%BA%BF%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86-20240606111909602.webp)
