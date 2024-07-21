@@ -10,6 +10,7 @@ title: 私藏五年的开发工具分享
 description: 开发中我们需要使用到各种工具，这篇文章整理了我工作五年以来经常使用的开发工具。
 categories:
   - 前端
+Obsidian地址: obsidian://open?vault=content&file=C%20Knowledge%2F%E5%89%8D%E7%AB%AF%2F%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%2F%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7
 ---
 ## 目录
 # 写在前面
