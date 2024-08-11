@@ -6,7 +6,7 @@ tags:
   - 编程/React
   - 编程/FE/Three
 publish: true
-date: 2024-06-23 15:23
+date: 2024-08-11
 Demo 地址: https://cube.songxingguo.com/
 语雀地址: https://www.yuque.com/songxingguo/read/vkqpzpzrhwcceyh0
 path: react-three-fiber-cube
