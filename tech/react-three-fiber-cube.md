@@ -27,6 +27,8 @@ Obsidian地址: obsidian://open?vault=content&file=C%20Knowledge%2F%E5%89%8D%E7%
 ![ThreeJS实现网页版魔方 20240808085447473](https://image.songxingguo.com/obsidian/20240809/ThreeJS%E5%AE%9E%E7%8E%B0%E7%BD%91%E9%A1%B5%E7%89%88%E9%AD%94%E6%96%B9-20240808085447473.webp)
 当然这次，还只是一个初步的模型，还有很多问题，但后面会不断迭代，添加新的功能，比如切换阶数、打乱、还原、以及教程等，并且希望能将我新学的技术都能用到上面。
 
+> 点击链接查看[原文](https://blog.songxingguo.com/posts/tech/react-three-fiber-cube/) ， 订阅 [SSR](https://blog.songxingguo.com/atom.xml) 获得最新动态。
+
 ## 实现思路
 
 这次是魔方的简单实现，一共分为两步，第一步是实现一个静态魔方，第二步就是让它可以转起来。
