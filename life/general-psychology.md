@@ -11,7 +11,7 @@ date: 2024-09-01
 path: life/general-psychology
 categories:
   - 读书笔记
-description: 如果要用一个词概括本书的内容的话，那就是行动，不管是追求幸福还是克服拖延我们都应该行动起来，只有行动一切才会发生改变。
+description: 如果要用一个词概括这本书的内容的话，那就是行动，不管是追求幸福还是克服拖延我们都应该行动起来，只有行动一切才会发生改变。
 title: 《心理学通识》
 Obsidian地址: obsidian://open?vault=content&file=C%20Knowledge%2F%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%2F%E3%80%8A%E5%BF%83%E7%90%86%E5%AD%A6%E9%80%9A%E8%AF%86%E3%80%8B.md
 ---
@@ -28,7 +28,7 @@ Obsidian地址: obsidian://open?vault=content&file=C%20Knowledge%2F%E8%AF%BB%E4%
 
 # 个人思考
 
-如果要用一个词概括本书的内容的话，那就是行动，不管是追求幸福还是克服拖延我们都应该行动起来，只有行动一切才会发生改变。
+如果要用一个词概括这本书的内容的话，那就是行动，不管是追求幸福还是克服拖延我们都应该行动起来，只有行动一切才会发生改变。
 
 ## 吃不到的葡萄🍇就是酸的
 
