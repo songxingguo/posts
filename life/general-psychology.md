@@ -5,7 +5,7 @@ Type: Entity
 tags:
   - 场景/阅读
 publish: true
-date: 2024-08-24 10:35
+date: 2024-09-01
 微信读书: https://weread.qq.com/web/reader/0a43248071fc16c70a4bfba
 一个词: 行动
 path: life/general-psychology
