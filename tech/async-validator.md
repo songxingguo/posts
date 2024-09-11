@@ -5,7 +5,7 @@ Type: Entity
 tags:
   - 编程/Vue
 publish: true
-date: 2024-09-07 15:57
+date: 2024-09-11
 path: tech/async-validator
 categories:
   - 前端
