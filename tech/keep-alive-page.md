@@ -13,8 +13,8 @@ description: 当我们在列表页面进行了搜索操作，进入详情页面�
 
 path: tech/keep-alive-page
 
-title: Vue 从列表页面进入详情页面，再次返回原页面，不清空查询条件或滚动位置
-Obsidian地址: obsidian://open?vault=content&file=C%20Knowledge%2F%E5%89%8D%E7%AB%AF%2F%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92%2F%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8%2F%E5%85%AB%E8%82%A1%E6%96%87%2FVue%20%E4%BB%8E%E5%88%97%E8%A1%A8%E9%A1%B5%E9%9D%A2%E8%BF%9B%E5%85%A5%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2%EF%BC%8C%E5%86%8D%E6%AC%A1%E8%BF%94%E5%9B%9E%E5%8E%9F%E9%A1%B5%E9%9D%A2%EF%BC%8C%E4%B8%8D%E6%B8%85%E7%A9%BA%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6%E6%88%96%E6%BB%9A%E5%8A%A8%E4%BD%8D%E7%BD%AE.md
+title: 06. Vue 从列表页面进入详情页面，再次返回原页面，不清空查询条件或滚动位置
+Obsidian地址: obsidian://open?vault=content&file=C%20Knowledge%2F%E5%89%8D%E7%AB%AF%2F%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92%2F%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8%2F%E5%85%AB%E8%82%A1%E6%96%87%2F06.%20Vue%20%E4%BB%8E%E5%88%97%E8%A1%A8%E9%A1%B5%E9%9D%A2%E8%BF%9B%E5%85%A5%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2%EF%BC%8C%E5%86%8D%E6%AC%A1%E8%BF%94%E5%9B%9E%E5%8E%9F%E9%A1%B5%E9%9D%A2%EF%BC%8C%E4%B8%8D%E6%B8%85%E7%A9%BA%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6%E6%88%96%E6%BB%9A%E5%8A%A8%E4%BD%8D%E7%BD%AE.md
 ---
 
 ## 目录
