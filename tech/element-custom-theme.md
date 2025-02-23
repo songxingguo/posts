@@ -38,8 +38,6 @@ Obsidian地址: obsidian://open?vault=content&file=C%20Knowledge%2F%E5%89%8D%E7%
 
 最终的效果可以在[预览地址](https://dlillard0.github.io/element-custom-theme/)中查看，也可以在[element-custom-theme](https://github.com/DLillard0/element-custom-theme) 中查看源码。
 
-!\[\[自定义主题色-20250216224812621.webp]]
-
 ### 实现思路
 
 我们都知道 ElementUI 的主题是可以通过scss变量来动态改变的，如果我们紧紧是为了在编译的时候修改 ElementUI 组件的主题样式，只需要定义一个 `element-variables.scss` 文件修改一下主题变量就可以了，但如果想要在运行时动态修改项目的主题色，就需要在此基础上通过 CSS3 变量来实现，这样是因为原本的scss变量，只支持编译时指定，但并不支持后期改变，也就不能完全满足我们动态切换主题的需求。
