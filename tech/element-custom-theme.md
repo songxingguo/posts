@@ -40,7 +40,7 @@ Obsidian地址: obsidian://open?vault=content&file=C%20Knowledge%2F%E5%89%8D%E7%
 
 ### 实现思路
 
-我们都知道 ElementUI 的主题是可以通过scss变量来动态改变的，如果我们紧紧是为了在编译的时候修改 ElementUI 组件的主题样式，只需要定义一个 `element-variables.scss` 文件修改一下主题变量就可以了，但如果想要在运行时动态修改项目的主题色，就需要在此基础上通过 CSS3 变量来实现，这样是因为原本的scss变量，只支持编译时指定，但并不支持后期改变，也就不能完全满足我们动态切换主题的需求。
+我们都知道 ElementUI 的主题是可以通过scss变量来动态改变的，如果我们仅仅是为了在编译的时候修改 ElementUI 组件的主题样式，只需要定义一个 `element-variables.scss` 文件修改一下主题变量就可以了，但如果想要在运行时动态修改项目的主题色，就需要在此基础上通过 CSS3 变量来实现，这样是因为原本的scss变量，只支持编译时指定，但并不支持后期改变，也就不能完全满足我们动态切换主题的需求。
 
 实现方式很简单，就三步：
 
@@ -70,7 +70,7 @@ root.style.setProperty('--color-primary', color);
 
 ### 具体实现
 
-`element-variables.scss` 文件的完整代码如下，下面的代码首先在 `:root` 中定义css变量，然后将ElemententUI 的主题变量使用 css 变量进行定义，覆盖一下内置函数，最后就是修改ElementUI 主题的常规操作，定义字体文件路径和引入主题样式，想要了解更多修改ElementUI主题的内容可以查看[官方文档](https://element.eleme.cn/#/zh-CN/component/custom-theme)。
+`element-variables.scss` 文件的完整代码如下，下面的代码首先在 `:root` 中定义css变量，然后将 ElementUI 的主题变量使用 css 变量进行定义，覆盖一下内置函数，最后就是修改ElementUI 主题的常规操作，定义字体文件路径和引入主题样式，想要了解更多修改ElementUI主题的内容可以查看[官方文档](https://element.eleme.cn/#/zh-CN/component/custom-theme)。
 
 ```css
 :root {
@@ -177,7 +177,7 @@ export default {
 
 ### 兼容性处理
 
-如果你的项目不需要考虑IE浏览器的兼容性，或者可以允许IE降级体验，不需要动态切换主题，上面的内容已经能完全满足你需求了。但如果你非要IE 也需要切换主题，由于 css 变量和 color-mix 函数存在一些兼容性问题，可以通过写一个 postcss 插件来提供兜底方案。这样在不支持 css 变量和 color-mix 函数的浏览器中，就会使用固定的色值。
+如果你的项目不需要考虑IE浏览器的兼容性，或者可以允许IE降级体验，不需要动态切换主题，上面的内容已经能完全满足你需求了。但如果你非要让IE也支持切换主题，由于 css 变量和 color-mix 函数存在一些兼容性问题，可以通过写一个 postcss 插件来提供兜底方案。这样在不支持 css 变量和 color-mix 函数的浏览器中，就会使用固定的色值。
 
 下面是 `postcss-plugin.js` 文件的完整定义：
 
